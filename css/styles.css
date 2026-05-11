@@ -37,6 +37,8 @@ nav{
 	font-family: 'Poppons';
 }
 
+
+
 nav ul li a{
 	color: #FFFFFF;
 	
@@ -176,8 +178,8 @@ figcaption{
 	margin: 30px 0; 
 }
 .project{
-	margin: 30px 0; 
-	padding: 60px;
+    margin: 30px 0;
+    padding: 60px 30px;
 }
 
 .blue{
@@ -229,4 +231,122 @@ nav li a{
 }
 nav li a:hover{
 	text-decoration: underline;
+}
+
+/* =========================
+   RESPONSIVE TABLET
+========================= */
+@media screen and (max-width: 768px){
+
+    nav ul{
+        padding: 15px;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    header{
+        margin-bottom: 80px;
+        background-position: center;
+        padding: 40px 20px;
+    }
+
+    h1{
+        font-size: 45px;
+        line-height: 1.2;
+    }
+
+    h2{
+        font-size: 28px;
+        line-height: 1.3;
+    }
+
+    .skill-list{
+        font-size: 25px;
+        padding: 30px 15px;
+    }
+
+    .project{
+        padding: 30px 20px;
+    }
+
+    .right-alignment{
+        text-align: left;
+    }
+
+    footer h2{
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+
+    .intro-img{
+        margin-top: 20px;
+    }
+
+    input,
+    textarea{
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #profilForm{
+        width: 100% !important;
+    }
+
+    .data{
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+}
+
+/* =========================
+   RESPONSIVE HP
+========================= */
+@media screen and (max-width: 480px){
+
+    nav ul{
+        padding: 10px;
+    }
+
+    nav ul li{
+        font-size: 12px;
+    }
+
+    h1{
+        font-size: 34px;
+    }
+
+    h2{
+        font-size: 22px;
+    }
+
+    p{
+        font-size: 14px;
+    }
+
+    .skill-list{
+        font-size: 18px;
+        line-height: 1.8;
+    }
+
+    .project{
+        padding: 20px 15px;
+    }
+
+    footer{
+        padding: 30px 15px;
+    }
+
+    footer h2{
+        font-size: 24px;
+    }
+
+    li.empty{
+        display: none;
+    }
+
 }
