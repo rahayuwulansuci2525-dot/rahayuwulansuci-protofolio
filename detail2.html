@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>User Experience Design for Dashboard App</title>
+	<link rel="stylesheet" href="css/bootstrap-grid.css" type="text/css">
+	<link rel="stylesheet" href="css/styles.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<style>
+		.project-container {
+			background-color: white;
+			max-width: 1200px;
+			margin: 0 auto;
+			box-shadow: 0 0 30px rgba(0,0,0,0.1);
+		}
+		.full-width-image {
+			width: 100%;
+			height: 500px;
+			object-fit: cover;
+		}
+		.breadcrumb {
+			padding: 20px;
+			background-color: #f8f9fa;
+			font-family: 'IBM Plex Mono', monospace;
+			font-size: 14px;
+		}
+		.breadcrumb a {
+			color: black;
+			text-decoration: none;
+		}
+		.breadcrumb .projek-ini{
+			color: blue;
+		}
+		.breadcrumb a:hover {
+			text-decoration: underline;
+		}
+		.project-title {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			font-size: 40pt;
+			transform: translate(-50%, -50%);
+			color: #718b78;
+			text-align: center;
+			text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+		}
+		.image-container {
+			position: relative;
+		}
+		
+		/* Slider Styles */
+		.project-slider {
+			position: relative;
+			width: 100%;
+			overflow: hidden;
+		}
+		.slider-container {
+			display: flex;
+			transition: transform 0.5s ease;
+			width: 300%;
+		}
+		.slider-slide {
+			width: 33.33%;
+			flex-shrink: 0;
+		}
+		.slider-slide img {
+			width: 100%;
+			height: 500px;
+			object-fit: cover;
+		}
+		.slider-controls {
+			position: absolute;
+			bottom: 20px;
+			left: 50%;
+			transform: translateX(-50%);
+			display: flex;
+			gap: 10px;
+		}
+		.slider-dot {
+			width: 10px;
+			height: 10px;
+			background-color: rgba(255,255,255,0.5);
+			border-radius: 50%;
+			cursor: pointer;
+			transition: background-color 0.3s;
+		}
+		.slider-dot.active {
+			background-color: white;
+		}
+		
+		/* Slider Checkbox Hack */
+		.slider-toggle {
+			display: none;
+		}
+		#slide1:checked ~ .slider-container {
+			transform: translateX(0);
+		}
+		#slide2:checked ~ .slider-container {
+			transform: translateX(-33.33%);
+		}
+		#slide3:checked ~ .slider-container {
+			transform: translateX(-66.66%);
+		}
+	</style>
+</head>
+
+<body>
+	<nav>
+		<ul>
+			<li><a href="../index.html#contact">contact</a></li>
+			<li>works</li>
+			<li>expertience</li>
+			<li class="empty"></li>
+			<li><a href="profil.html">profil</a></li>
+			<li><a href="https://www.instagram.com/rahayuwulansuci_?igsh=cnRwejNqcnRwN252" target="_blank">Instagram</a></li>
+			<li><a href="https://www.linkedin.com/in/rahayu-wulan-suci-wulan-359963290?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">linkedin</a></li>
+		</ul>
+	</nav>
+
+	<div class="project-container">
+		<div class="image-container">
+			<img src="./img/manajemen1.png" class="full-width-image" alt="halaman utama website manajemen tugas harian">
+			<h1 class="project-title">FokusTask — Website Manajemen <br>Tugas Harian</h1>
+		</div>
+		<div class="breadcrumb">
+			<a href="../index.html">Home</a> / FokusTask — Website Manajemen Tugas Harian / <a class="projek-ini" href="https://pencatatan-tugas-sederhana-ayu.netlify.app" target="_blank" rel="noopener noreferrer">Lihat Projek Ini</a> 
+		<section class="project" style="padding-top: 50px;">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Gambaran Project</h2>
+						<p>FokusTask adalah website manajemen tugas harian sederhana yang dibuat sebagai latihan pengembangan website interaktif menggunakan JavaScript dasar. Project ini dirancang untuk membantu pengguna mencatat kegiatan atau tugas yang harus diselesaikan agar lebih terorganisir dan produktif.</p>
+						<p>Website ini memiliki beberapa fitur utama seperti menambahkan tugas baru, menentukan deadline tugas, menghapus tugas, dan memindahkan tugas ke daftar tugas selesai. Selain itu, website juga menampilkan statistik jumlah tugas aktif dan tugas yang telah diselesaikan secara otomatis.</p>
+						<p>Dalam proses pembuatannya, project ini menggunakan HTML untuk struktur website, CSS untuk tampilan dan layout, serta JavaScript untuk mengatur interaksi dan pengolahan data tugas.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project blue">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Perencanaan Fitur</h2>
+						<p>Dalam proses pembuatan website ini, saya melakukan beberapa tahap sederhana untuk menentukan tampilan dan fitur yang sesuai dengan konsep aplikasi produktivitas.</p>
+						<ul>
+							<li>Mencari referensi desain aplikasi to-do list modern melalui internet dan media sosial</li>
+							<li>Menentukan kombinasi warna modern agar website terlihat clean dan nyaman digunakan</li>
+							<li>Menyusun struktur halaman sederhana yang terdiri dari home, daftar tugas, dan tugas selesai</li>
+							<li>Mempelajari penggunaan JavaScript dasar untuk menambah, menghapus, dan menampilkan data tugas secara dinamis</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Pengembangan Website</h2>
+						<p>Dalam proses pengembangan website, saya mencoba membuat tampilan yang sederhana, modern, dan mudah digunakan oleh pengguna.</p>
+						<ul>
+							<li>Menggunakan kombinasi warna navy, abu terang, dan biru soft untuk menciptakan tampilan modern</li>
+							<li>Menggunakan JavaScript untuk mengelola data tugas secara dinamis</li>
+							<li>Membuat tampilan daftar tugas menggunakan card sederhana agar lebih rapi dan mudah dibaca</li>
+							<li>Menambahkan form input tugas dan deadline menggunakan HTML form</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project blue">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Hasil dan Pembelajaran</h2>
+						<p>Melalui project ini, saya mendapatkan pengalaman dan pemahaman dasar dalam membuat website interaktif menggunakan JavaScript.</p>
+						<ul>
+							<li>Memahami penggunaan array dan function dalam JavaScript</li>
+							<li>Belajar memanipulasi elemen HTML menggunakan DOM</li>
+							<li>Belajar membuat fitur tambah, hapus, dan update data sederhana</li>
+							<li>Menambah pengalaman dalam membuat website bertema produktivitas dan manajemen tugas</li>
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Galeri Project</h2>
+						<div class="project-slider">
+							<input type="radio" name="slider" id="slide1" class="slider-toggle" checked>
+							<input type="radio" name="slider" id="slide2" class="slider-toggle">
+							<input type="radio" name="slider" id="slide3" class="slider-toggle">
+							
+							<div class="slider-container">
+								<div class="slider-slide">
+									<img src="./img/manajemen1.png" alt="Halaman home">
+								</div>
+								<div class="slider-slide">
+									<img src="./img/manajemen2.png" alt="halaman tambah tugas">
+								</div>
+								<div class="slider-slide">
+									<img src="./img/manajemen3.png" alt="halaman tugas selesai">
+								</div>
+							</div>
+							
+							<div class="slider-controls">
+								<label for="slide1" class="slider-dot"></label>
+								<label for="slide2" class="slider-dot"></label>
+								<label for="slide3" class="slider-dot"></label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<footer id="contact">
+		<h2>Ada Pertanyaan?<br> Hubungi Saya di sini <br><a href="mailto:rahayuwulansuci6@gmail.com">rahayuwulansuci6@gmail.com</a></h2>
+				<p>&copy; 2026 Rahayu Wulan Suci</p>
+		</footer>
+	<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"0979519352d845179b7d0b6ab2feaaab","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+	</html>

@@ -1,0 +1,233 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Branding Strategy for Female Cosmetics</title>
+	<link rel="stylesheet" href="css/bootstrap-grid.css" type="text/css">
+	<link rel="stylesheet" href="css/styles.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<style>
+		.project-container {
+			background-color: white;
+			max-width: 1200px;
+			margin: 0 auto;
+			box-shadow: 0 0 30px rgba(0,0,0,0.1);
+		}
+		.full-width-image {
+			width: 100%;
+			height: 500px;
+			object-fit: cover;
+		}
+		.breadcrumb {
+			padding: 20px;
+			background-color: #f8f9fa;
+			font-family: 'IBM Plex Mono', monospace;
+			font-size: 14px;
+		}
+		.breadcrumb a {
+			color: black;
+			text-decoration: none;
+		}
+		.breadcrumb a:hover {
+			text-decoration: underline;
+		}
+		.project-title {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			font-size: 50pt;
+			transform: translate(-50%, -50%);
+			color: #718b78;
+			text-align: center;
+			text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+		}
+		.image-container {
+			position: relative;
+		}
+		
+		/* Slider Styles */
+		.project-slider {
+			position: relative;
+			width: 100%;
+			overflow: hidden;
+		}
+		.slider-container {
+			display: flex;
+			transition: transform 0.5s ease;
+			width: 300%;
+		}
+		.slider-slide {
+			width: 33.33%;
+			flex-shrink: 0;
+		}
+		.slider-slide img {
+			width: 100%;
+			height: 500px;
+			object-fit: cover;
+		}
+		.slider-controls {
+			position: absolute;
+			bottom: 20px;
+			left: 50%;
+			transform: translateX(-50%);
+			display: flex;
+			gap: 10px;
+		}
+		.slider-dot {
+			width: 10px;
+			height: 10px;
+			background-color: rgba(255,255,255,0.5);
+			border-radius: 50%;
+			cursor: pointer;
+			transition: background-color 0.3s;
+		}
+		.slider-dot.active {
+			background-color: white;
+		}
+		
+		/* Slider Checkbox Hack */
+		.slider-toggle {
+			display: none;
+		}
+		#slide1:checked ~ .slider-container {
+			transform: translateX(0);
+		}
+		#slide2:checked ~ .slider-container {
+			transform: translateX(-33.33%);
+		}
+		#slide3:checked ~ .slider-container {
+			transform: translateX(-66.66%);
+		}
+	</style>
+</head>
+
+<body>
+	<nav>
+		<ul>
+			<li><a href="../index.html#contact">contact</a></li>
+			<li>works</li>
+			<li>expertience</li>
+			<li class="empty"></li>
+			<li><a href="https://www.instagram.com/rahayuwulansuci_?igsh=cnRwejNqcnRwN252" target="_blank">Instagram</a></li>
+			<li><a href="https://www.linkedin.com/in/rahayu-wulan-suci-wulan-359963290?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">linkedin</a></li>
+		</ul>
+	</nav>
+
+	<div class="project-container">
+		<div class="image-container">
+			<img src="./img/orga1.jpeg" class="full-width-image" alt="halaman utama website pengalaman organisasi selsa di HIMATIF">
+			<h1 class="project-title">Pengalaman Organisasi <br>Selama Bergabung di HIMATIF</h1>
+		</div>
+		<div class="breadcrumb">
+			<a href="../index.html">Home</a> / Pengalaman Organisasi Selama Bergabung di HIMATIF
+		</div>
+		<section class="project" style="padding-top: 50px;">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Pengalaman Saya</h2>
+						<p>Selama bergabung di HIMATIF, saya mendapatkan pengalaman baru dalam dunia organisasi kampus. Saya belajar bagaimana bekerja sama dalam tim, mengikuti kegiatan organisasi, dan beradaptasi dalam lingkungan yang melibatkan banyak anggota dengan tugas yang berbeda. Selain itu, pengalaman ini juga membantu saya meningkatkan rasa tanggung jawab dan kemampuan komunikasi.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project blue">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Kegiatan yang Pernah Diikuti</h2>
+						<p>Kegiatan yang pernah saya ikuti, Selama bergabung di HIMATIF :</p>
+						<ul>
+							<li>Mengikuti rapat dan diskusi organisasi bersama anggota HIMATIF</li>
+							<li>Mengikuti beberapa kegiatan dan rapat organisasi</li>
+							<li>Berpartisipasi dalam beberapa kegiatan organisasi kampus</li>
+							<li>Membantu persiapan kegiatan dan koordinasi sederhana dalam organisasi</li>
+							<li>Menjadi moderator dalam salah satu kegiatan HIMATIF</li>
+							<li>Mengikuti kegiatan kebersamaan dan diskusi antar anggota organisasi</li> </ul>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Hal yang Saya Pelajari</h2>
+						
+						<ul>
+							<li>Belajar bekerja sama dalam sebuah tim</li>
+							<li>Meningkatkan kemampuan komunikasi dengan anggota lainnya</li>
+							<li>Belajar bertanggung jawab terhadap tugas yang diberikan</li>
+							<li>Memahami pentingnya disiplin dan manajemen waktu</li>
+							<li>Meningkatkan rasa percaya diri saat berbicara di depan umum</li>
+							<li>Menambah pengalaman dalam mengikuti kegiatan kampus</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- <section class="project blue">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Key Outcomes</h2>
+						<p>SMelalui pengalaman organisasi ini, saya mendapatkan banyak pelajaran dan pengalaman baru yang bermanfaat untuk pengembangan diri.</p>
+						<ul>
+							<li>Lebih memahami pentingnya komunikasi dalam kerja tim</li>
+							<li>Belajar bertanggung jawab terhadap tugas dan kegiatan</li>
+							<li>Meningkatkan rasa percaya diri saat berbicara di depan umum</li>
+							<li>Menambah pengalaman dalam lingkungan organisasi kampus</li>
+							<li>Belajar mengatur waktu antara kegiatan kuliah dan organisasi</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section> -->
+
+		<section class="project">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Project Gallery</h2>
+						<div class="project-slider">
+							<input type="radio" name="slider" id="slide1" class="slider-toggle" checked>
+							<input type="radio" name="slider" id="slide2" class="slider-toggle">
+							<input type="radio" name="slider" id="slide3" class="slider-toggle">
+							
+							<div class="slider-container">
+								<div class="slider-slide">
+									<img src="./img/orga1.jpeg" alt="Foto PMO - H3">
+								</div>
+								<div class="slider-slide">
+									<img src="./img/org2.jpeg" alt="Foto PMO - H2">
+								</div>
+								<div class="slider-slide">
+									<img src="./img/org3.jpeg" alt="Foto TMO -H1">
+								</div>
+							</div>
+							
+							<div class="slider-controls">
+								<label for="slide1" class="slider-dot"></label>
+								<label for="slide2" class="slider-dot"></label>
+								<label for="slide3" class="slider-dot"></label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<footer id="contact">
+		<h2>Ada Pertanyaan?<br> Hubungi Saya di sini <br><a href="mailto:rahayuwulansuci6@gmail.com">rahayuwulansuci6@gmail.com</a></h2>
+				<p>&copy; 2026 Rahayu Wulan Suci</p>
+		</footer>
+	<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"0979519352d845179b7d0b6ab2feaaab","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+	</html>
